@@ -1,0 +1,9 @@
+{
+	"name": "currencyfactory",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3747e33a-3141-44bf-bf0a-aaa27f6a48e8",
+		"tenantId": "4941aad4-db7d-4ff7-896d-18c8adf358ba"
+	}
+}
