@@ -1,0 +1,9 @@
+{
+	"name": "SparesADFstorage",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b7c78051-9486-44c9-8741-639eacf6b372",
+		"tenantId": "4941aad4-db7d-4ff7-896d-18c8adf358ba"
+	}
+}
