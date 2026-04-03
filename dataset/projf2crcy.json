@@ -1,0 +1,24 @@
+{
+	"name": "projf2crcy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "projlinkstring",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "currency.csv",
+				"folderPath": "folder2currency",
+				"fileSystem": "localsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
