@@ -1,0 +1,22 @@
+{
+	"name": "srcgithub",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_git",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Ngugimwangi-dataeng/azure-data-factory-portfolio/refs/heads/main/factory/sales.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
