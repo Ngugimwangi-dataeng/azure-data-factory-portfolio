@@ -1,0 +1,32 @@
+{
+	"name": "rpdestsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fromgit",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sinkpar": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().sinkpar",
+					"type": "Expression"
+				},
+				"folderPath": "outputcond",
+				"fileSystem": "reportingdatascientists"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
