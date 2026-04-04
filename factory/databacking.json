@@ -1,0 +1,9 @@
+{
+	"name": "databacking",
+	"location": "southafricanorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2f12493c-3bc2-4894-9c32-9e7acf58af53",
+		"tenantId": "4941aad4-db7d-4ff7-896d-18c8adf358ba"
+	}
+}
