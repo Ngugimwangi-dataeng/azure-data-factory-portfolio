@@ -1,5 +1,5 @@
 {
-	"name": "gitfrom",
+	"name": "source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "fromgit",
@@ -10,9 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "file2.csv",
-				"folderPath": "csvfiles",
-				"fileSystem": "destination"
+				"fileName": "sales.csv",
+				"folderPath": "no1",
+				"fileSystem": "sourcestore"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
