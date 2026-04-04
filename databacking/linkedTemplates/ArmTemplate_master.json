@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "databacking"
 		},
+		"fromgit_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'fromgit'"
+		},
 		"moneylinkedadl_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'moneylinkedadl'"
@@ -15,6 +19,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'projlinkstring'"
 		},
+		"fromgit_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://recvbackup.dfs.core.windows.net/"
+		},
 		"moneylinkedadl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://monayaccount.dfs.core.windows.net/"
@@ -22,6 +30,10 @@
 		"projlinkstring_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://projectno1storage.dfs.core.windows.net/"
+		},
+		"source_git_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com"
 		},
 		"containerUri": {
 			"type": "string",
@@ -50,17 +62,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"fromgit_accountKey": {
+						"value": "[parameters('fromgit_accountKey')]"
+					},
 					"moneylinkedadl_accountKey": {
 						"value": "[parameters('moneylinkedadl_accountKey')]"
 					},
 					"projlinkstring_accountKey": {
 						"value": "[parameters('projlinkstring_accountKey')]"
 					},
+					"fromgit_properties_typeProperties_url": {
+						"value": "[parameters('fromgit_properties_typeProperties_url')]"
+					},
 					"moneylinkedadl_properties_typeProperties_url": {
 						"value": "[parameters('moneylinkedadl_properties_typeProperties_url')]"
 					},
 					"projlinkstring_properties_typeProperties_url": {
 						"value": "[parameters('projlinkstring_properties_typeProperties_url')]"
+					},
+					"source_git_properties_typeProperties_url": {
+						"value": "[parameters('source_git_properties_typeProperties_url')]"
 					}
 				}
 			},

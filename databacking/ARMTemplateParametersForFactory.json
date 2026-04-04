@@ -5,17 +5,26 @@
 		"factoryName": {
 			"value": "databacking"
 		},
+		"fromgit_accountKey": {
+			"value": ""
+		},
 		"moneylinkedadl_accountKey": {
 			"value": ""
 		},
 		"projlinkstring_accountKey": {
 			"value": ""
 		},
+		"fromgit_properties_typeProperties_url": {
+			"value": "https://recvbackup.dfs.core.windows.net/"
+		},
 		"moneylinkedadl_properties_typeProperties_url": {
 			"value": "https://monayaccount.dfs.core.windows.net/"
 		},
 		"projlinkstring_properties_typeProperties_url": {
 			"value": "https://projectno1storage.dfs.core.windows.net/"
+		},
+		"source_git_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com"
 		}
 	}
 }
