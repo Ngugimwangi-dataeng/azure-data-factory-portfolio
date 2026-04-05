@@ -1,0 +1,39 @@
+{
+	"name": "dataflowone",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "transformationdata",
+						"type": "DatasetReference"
+					},
+					"name": "sourceCSV"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"parameters{",
+				"     parameter1 as string",
+				"}",
+				"source(output(",
+				"          order_number as string,",
+				"          date as string,",
+				"          warehouse as string,",
+				"          client_type as string,",
+				"          product_line as string,",
+				"          quantity as short,",
+				"          unit_price as double,",
+				"          total as double,",
+				"          payment as string,",
+				"          payment_fee as double",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourceCSV"
+			]
+		}
+	}
+}
